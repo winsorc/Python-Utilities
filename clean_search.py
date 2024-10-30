@@ -10,11 +10,11 @@ def Clean_IRC_Search():
         #Confirm removal
         confirm = input('Okay to delete all Searchbot files in folder? (y/n) ')
         if confirm.lower() == 'y':
-            #Select all files where name begins with SearchBot
-            for file in folder.glob('SearchBot*'):
+            #Select all files where name begins with Search
+            for file in folder.glob('Search*'):
                 file.unlink() #deletes file
                 print(f'Deleted: {file}')
-            print('All SearchBot files deleted')
+            print('All SearchBot and SearchOok files deleted')
         else:
             print('Delete canceled.')
     else:('The path you entered does not exist or is not a folder')
